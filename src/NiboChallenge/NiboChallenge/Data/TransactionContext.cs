@@ -10,10 +10,5 @@ namespace NiboChallenge.Data
         }
 
         public DbSet<Transaction> Transactions { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Password=01;Persist Security Info=True;User ID=sa;Initial Catalog=ConciliationDB;Data Source=LAPTOP-Q906974O");
-        }
     }
 }
